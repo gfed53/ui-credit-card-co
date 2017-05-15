@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Credit Card Checkout</title>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -9,9 +10,28 @@
 	<div class="grid">
 		<h1>Credit Card Info</h1>
 		<form>
-			<label for="firstName">First Name: </label>
-			<input type="text" placeholder="John">
-			
+			<p>Select cardholder:</p>
+			<!-- Insert thumbs of mastercard, visa, ax, exc. -->
+			<div>
+				<label for="firstName">First Name: </label>
+				<input type="text" placeholder="John">
+			</div>
+			<div>
+				<label for="lastName">Last Name: </label>
+				<input type="text" placeholder="Smith">
+			</div>
+			<div>
+				<label for="ccNumber">Credit Card #: </label>
+				<input type="text" placeholder="xxxx-xxxx-xxxx">
+			</div>
+			<div>
+				<label for="ccNumber">Credit Card Expiration Date: </label>
+				<input type="date">
+			</div>
+			<div>
+				<label for="ccNumber">Credit Card Security Code: </label>
+				<input type="text">
+			</div>
 		</form>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
