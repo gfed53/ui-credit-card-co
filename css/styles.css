@@ -9,7 +9,8 @@
           box-sizing: inherit; }
 
 .grid {
-  margin: 0 2em;
+  max-width: 50em;
+  margin: 0 auto;
   border: 1px solid black; }
   .grid:after {
     /* Or @extend clearfix */
@@ -40,7 +41,8 @@
   width: 12.5%; }
 
 .my-row {
-  border: 1px solid red; }
+  border: 1px solid red;
+  text-align: center; }
 
 /* Opt-in outside padding */
 .grid-pad {
@@ -49,8 +51,6 @@
     padding-right: 2em; }
 
 @media screen and (min-width: 768px) {
-  .grid {
-    margin: 0 4em; }
   .col-med-1-2 {
     width: 50%;
     border: 1px solid green; } }
@@ -62,29 +62,26 @@ h1 {
 form, input, button {
   font-size: 1.2em; }
 
-form .form-seg {
+form {
   display: inline-block;
-  min-height: 1.5em; }
-
-form input, form button {
-  border: 1px solid grey; }
-
-form div {
-  margin: 1em 0; }
-
-form label {
-  display: inline-block;
-  min-width: 13em; }
-
-form input {
-  padding-left: 5px;
-  min-height: 1.3em; }
-
-form input[type='date'] {
-  position: relative;
-  top: -2px; }
-
-form button {
-  padding: 0.5em;
-  color: white;
-  background-color: black; }
+  text-align: left; }
+  form .form-seg {
+    display: inline-block;
+    min-height: 1.5em; }
+  form input, form button {
+    border: 1px solid grey; }
+  form div {
+    margin: 1em 0; }
+  form label {
+    display: inline-block;
+    min-width: 13em; }
+  form input {
+    padding-left: 5px;
+    min-height: 1.3em; }
+  form input[type='date'] {
+    position: relative;
+    top: -2px; }
+  form button {
+    padding: 0.5em;
+    color: white;
+    background-color: black; }
