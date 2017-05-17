@@ -9,8 +9,54 @@
 .grid
 	// width: 100%
 	margin: 0 2em
+	border: 1px solid black
+
+
+	&:after 
+    /* Or @extend clearfix */
+    content: ""
+    display: table
+    clear: both
+
+.col 
+	float: left
+	padding-right: $pad
+	.grid &:last-of-type 
+		padding-right: 0
+
+.col-2-3
+  width: 66.66%
+
+.col-1-3
+  width: 33.33%
+
+.col-1-2
+  width: 50%
+  border: 1px solid green
+
+.col-1-4
+  width: 25%
+
+.col-1-8
+  width: 12.5%
+
+.my-row
+	border: 1px solid red
+
+/* Opt-in outside padding */
+.grid-pad
+  padding: $pad 0 $pad $pad
+  [class*='col-']:last-of-type
+    padding-right: $pad
+
 
 
 @media screen and ($tablet)
 	.grid
 		margin: 0 4em
+
+
+
+	.col-med-1-2
+	  width: 50%
+	  border: 1px solid green

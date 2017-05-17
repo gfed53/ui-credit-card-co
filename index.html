@@ -8,34 +8,84 @@
 </head>
 <body>
 	<div class="grid">
-		<h1>Credit Card Info</h1>
-		<form>
-			<p>Select cardholder:</p>
-			<!-- Insert thumbs of mastercard, visa, ax, exc. -->
-			<div>
-				<label for="firstName">First Name: </label>
-				<input type="text" placeholder="John">
-			</div>
-			<div>
-				<label for="lastName">Last Name: </label>
-				<input type="text" placeholder="Smith">
-			</div>
-			<div>
-				<label for="ccNumber">Credit Card #: </label>
-				<input type="text" placeholder="xxxx-xxxx-xxxx">
-			</div>
-			<div>
-				<label for="ccNumber">Credit Card Expiration Date: </label>
-				<input type="date">
-			</div>
-			<div>
-				<label for="ccNumber">Credit Card Security Code: </label>
-				<input type="text">
-			</div>
-			<div>
-				<button>Proceed</button>
-			</div>
-		</form>
+		<div class="my-row">
+			<h2>Please enter your credit card information: </h2>
+		</div>
+		<div class="my-row">
+			<form>
+				<p>Select cardholder:</p>
+				<!-- Insert thumbs of mastercard, visa, ax, exc. -->
+				<div>
+					<div class="form-container">
+						<div class="form-seg">
+							<div class="med-1-2">
+								<label for="firstName">First Name: </label>
+							</div>
+							<div class="med-1-2">
+								<input type="text" placeholder="John">
+							</div>
+						</div>
+						<div class="form-seg">
+							<div class="med-1-2">
+								<label for="lastName">Last Name: </label>
+							</div>
+							<div class="med-1-2">
+								<input type="text" placeholder="Smith">
+							</div>
+						</div>
+					</div>
+					<div class="form-container">
+						<div class="form-seg">
+							<div class="med-1-2">
+								<label for="ccNumber">Credit Card #: </label>
+							</div>
+							<div class="med-1-2">
+								<input type="text" placeholder="xxxx-xxxx-xxxx">
+							</div>
+						</div>
+						<div class="form-seg">
+							<div class="med-1-2">
+								<label for="ccNumber">Credit Card Expiration Date: </label>
+							</div>
+							<div class="med-1-2">
+								<input type="date">
+							</div>
+						</div>
+					</div>
+					<div class="form-seg">
+						<div class="med-1-2">
+							<label for="ccNumber">Credit Card Security Code: </label>
+						</div>
+						<div class="med-1-2">
+							<input type="text">
+						</div>
+						
+					</div>
+				</div>
+				<!-- <div class="1-2">
+					<div class="form-seg">
+						
+					</div>
+					<div class="form-seg">
+						
+					</div>
+					<div class="form-seg">
+						
+					</div>
+					<div class="form-seg">
+						
+					</div>
+					<div class="form-seg">
+						
+					</div>
+				</div> -->
+				<div>
+					<button>Proceed</button>
+				</div>
+			</form>
+		</div>
+		
+		
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="./lib/parallax.min.js"></script>
