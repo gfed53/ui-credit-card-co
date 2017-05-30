@@ -63,8 +63,10 @@ form, input, button {
   font-size: 1.2em; }
 
 form {
-  display: inline-block;
+  padding: 1em;
   text-align: left; }
+  form .form-seg, form button {
+    margin: 0 3em; }
   form .form-seg {
     display: inline-block;
     min-height: 1.5em; }
@@ -81,6 +83,8 @@ form {
   form input[type='date'] {
     position: relative;
     top: -2px; }
+  form .form-button-container {
+    text-align: right; }
   form button {
     padding: 0.5em;
     color: white;
