@@ -8,6 +8,9 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+body {
+  background-color: darkgrey; }
+
 .grid {
   max-width: 50em;
   margin: 0 auto;
@@ -70,9 +73,7 @@ form, input, button {
 
 form {
   padding: 1em;
-  text-align: left; }
-  form .form-seg, form button, form p {
-    margin: 0 3em; }
+  text-align: center; }
   form .form-seg {
     display: inline-block;
     min-height: 1.5em; }
@@ -89,10 +90,16 @@ form {
   form input[type='date'] {
     position: relative;
     top: -2px; }
-  form .form-button-container {
-    text-align: right; }
   form button {
     padding: 0.5em;
     border: none;
     color: white;
     background-color: #E08283; }
+
+@media screen and (min-width: 530px) {
+  form {
+    text-align: left; }
+    form .form-seg, form button, form p {
+      margin: 0 3em; }
+    form .form-button-container {
+      text-align: right; } }

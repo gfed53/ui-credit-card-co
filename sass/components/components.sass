@@ -3,9 +3,8 @@ form
 	// font-size: 1.2em
 	// display: inline-block
 	padding: 1em
-	text-align: left
-	.form-seg, button, p
-		margin: 0 3em
+	text-align: center
+	
 	.form-container
 		// display: inline-block
 	.form-seg
@@ -30,14 +29,20 @@ form
 		top: -2px
 
 	//Form Button
-	.form-button-container
-		text-align: right
+	
 	button
 		padding: 0.5em
 		border: none
 		color: white
 		background-color: $secondary
 
+@media screen and ($mobile-fix)
+	form
+		text-align: left
+		.form-seg, button, p
+			margin: 0 3em
+		.form-button-container
+			text-align: right
 
 @media screen and ($tablet)
 	form
