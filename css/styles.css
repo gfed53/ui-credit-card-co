@@ -2,7 +2,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
 
 *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -77,6 +78,14 @@ form {
   form .form-seg {
     display: inline-block;
     min-height: 1.5em; }
+  form .cardholder-seg {
+    display: inline-block;
+    margin: 0.7em; }
+    form .cardholder-seg input {
+      bottom: 13px;
+      left: 4px; }
+  form img {
+    width: 2em; }
   form input {
     border: 1px solid grey; }
   form div {
@@ -85,10 +94,9 @@ form {
     display: inline-block;
     min-width: 13em; }
   form input {
-    padding-left: 5px;
-    min-height: 1.3em; }
+    padding-left: 5px; }
   form input[type='date'] {
-    position: relative;
+    font-size: 1em;
     top: -2px; }
   form button {
     padding: 0.5em;
@@ -99,7 +107,7 @@ form {
 @media screen and (min-width: 530px) {
   form {
     text-align: left; }
-    form .form-seg, form button, form p {
+    form .form-seg, form button {
       margin: 0 3em; }
     form .form-button-container {
       text-align: right; } }
